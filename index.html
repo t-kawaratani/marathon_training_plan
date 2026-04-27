@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>マラソントレーニング計画書 2026–2027</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+@page{size:A4;margin:12mm 11mm 10mm}
+body{font-family:"Noto Sans CJK JP","Noto Sans JP",sans-serif;font-size:9pt;line-height:1.5;color:#1a1a1a;background:#fff}
+h2{font-size:10.5pt;font-weight:700;padding:4pt 8pt;border-radius:3pt;margin:10pt 0 5pt}
+h3{font-size:9pt;font-weight:700;margin:6pt 0 3pt;color:#1a1a1a}
+p{margin-bottom:3pt}
+table{width:100%;border-collapse:collapse;font-size:8.5pt;margin-bottom:6pt}
+th{padding:3pt 5pt;font-weight:700;font-size:8pt;border:0.5pt solid #ccc;text-align:left}
+td{padding:2.5pt 5pt;border:0.5pt solid #ddd;vertical-align:top;line-height:1.4}
+tr:nth-child(even) td{background:#fafafa}
+/* Cover */
+.cover{text-align:center;padding:10mm 8mm 8mm;page-break-after:always}
+.cover-accent{background:#D85A30;height:4pt;border-radius:2pt;margin:0 auto 10pt;width:60mm}
+/* Sections – natural flow, no forced breaks */
+.sec{margin-top:10pt}
+.sec-newpage{page-break-before:always}
+.no-break{page-break-inside:avoid}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:7pt}
+.three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7pt}
+.note{background:#f8f8f8;border-left:2.5pt solid #D85A30;padding:3pt 6pt;margin:3pt 0;font-size:8.5pt;border-radius:0 2pt 2pt 0}
+.note.teal{border-left-color:#1D9E75}
+.note.purple{border-left-color:#7F77DD}
+.note.amber{border-left-color:#BA7517}
+/* h2 colors */
+.h2-teal{background:#E1F5EE;color:#0F6E56}
+.h2-coral{background:#FAECE7;color:#993C1D}
+.h2-amber{background:#FAEEDA;color:#854F0B}
+.h2-purple{background:#EEEDFE;color:#3C3489}
+.h2-pink{background:#FBEAF0;color:#72243E}
+.h2-blue{background:#E6F1FB;color:#185FA5}
+.h2-green{background:#EAF3DE;color:#3B6D11}
+.h2-gray{background:#F1EFE8;color:#5F5E5A}
+.h2-red{background:#FCEBEB;color:#A32D2D}
+/* th colors */
+.th-teal{background:#E1F5EE;color:#085041}
+.th-coral{background:#FAECE7;color:#993C1D}
+.th-purple{background:#EEEDFE;color:#3C3489}
+.th-amber{background:#FAEEDA;color:#854F0B}
+.th-gray{background:#F1EFE8;color:#5F5E5A}
+/* Week row colors */
+.w-rest td{background:#F5F3EE!important}
+.w-vhard td{background:#fff0ef!important}
+.w-hard td{background:#fff3f0!important}
+.w-easy td{background:#f2fdf8!important}
+.w-long td{background:#fffbf0!important}
+/* Annual plan */
+.ap-build td{background:#fff5f3!important}
+.ap-deload td{background:#f0fdf8!important}
+.ap-taper td{background:#f5faee!important}
+.ap-race td{background:#fffbee!important;font-weight:600}
+.ap-recovery td{background:#f5f5f5!important;color:#666}
+.ap-peak td{background:#f5f3ff!important;font-weight:600}
+.ap-main td{background:#fff0f0!important;font-weight:700}
+/* Tags */
+.tag{display:inline-block;font-size:7.5pt;font-weight:700;padding:0.5pt 4pt;border-radius:2pt}
+.tag-c{background:#FAECE7;color:#993C1D}
+.tag-b{background:#FAEEDA;color:#854F0B}
+.tag-a{background:#EEEDFE;color:#3C3489}
+.tag-m{background:#FCEBEB;color:#A32D2D}
+/* TOC item */
+.toc-item{display:flex;align-items:center;gap:5pt;padding:4pt 6pt;border-radius:5pt;background:#f8f8f8;margin-bottom:3pt}
+.toc-num{font-size:8pt;font-weight:700;padding:1.5pt 5pt;border-radius:2pt;min-width:20pt;text-align:center;white-space:nowrap}
+.toc-label{font-size:8.5pt;text-align:left;line-height:1.3}
+/* PB table on cover */
+.pb-card{background:#f8f8f8;border-radius:6pt;padding:8pt 12pt;max-width:130mm;margin:0 auto}
+.pb-section{margin-bottom:8pt}
+.pb-section:last-child{margin-bottom:0}
+.pb-cat{font-size:7.5pt;font-weight:700;letter-spacing:0.03em;margin-bottom:3pt;padding-bottom:2pt;border-bottom:1pt solid #ddd}
+.pb-row{display:grid;grid-template-columns:22mm 1fr 28mm 28mm;gap:4pt;font-size:8.5pt;align-items:center}
+.pb-label{font-size:7.5pt;color:#888}
+/* Footer */
+.footer{font-size:7pt;color:#aaa;margin-top:5pt;padding-top:3pt;border-top:0.5pt solid #eee}
+@media print{
+  body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .sec-newpage{page-break-before:always}
+  h2,h3{page-break-after:avoid}
+  .no-break{page-break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════ COVER ══════════ -->
+<div class="cover">
+  <div class="cover-accent"></div>
+  <div style="font-size:8pt;color:#999;letter-spacing:0.12em;margin-bottom:6pt">MARATHON TRAINING PLAN</div>
+  <div style="font-size:24pt;font-weight:700;line-height:1.15;color:#1a1a1a;margin-bottom:4pt">マラソントレーニング<br>計画書</div>
+  <div style="font-size:15pt;font-weight:700;color:#D85A30;margin-bottom:3pt">2026 – 2027</div>
+  <div style="font-size:9pt;color:#777;margin-bottom:14pt">2026年5月 〜 2027年3月さが桜マラソン　／　作成日：2026年4月27日</div>
+
+  <!-- Race target cards -->
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6pt;max-width:148mm;margin:0 auto 14pt">
+    <div style="background:#FCEBEB;border-radius:6pt;padding:7pt 8pt">
+      <div style="font-size:7pt;color:#A32D2D;font-weight:700;margin-bottom:2pt">本命レース</div>
+      <div style="font-size:11pt;font-weight:700;line-height:1.2">さが桜FM</div>
+      <div style="font-size:8pt;color:#666;margin-top:2pt">2027年3月21日</div>
+    </div>
+    <div style="background:#EEEDFE;border-radius:6pt;padding:7pt 8pt">
+      <div style="font-size:7pt;color:#3C3489;font-weight:700;margin-bottom:2pt">PB目標レース</div>
+      <div style="font-size:11pt;font-weight:700;line-height:1.2">香川丸亀HM</div>
+      <div style="font-size:8pt;color:#666;margin-top:2pt">2027年2月7日</div>
+    </div>
+    <div style="background:#FAEEDA;border-radius:6pt;padding:7pt 8pt">
+      <div style="font-size:7pt;color:#854F0B;font-weight:700;margin-bottom:2pt">Bレース</div>
+      <div style="font-size:11pt;font-weight:700;line-height:1.2">神戸マラソン</div>
+      <div style="font-size:8pt;color:#666;margin-top:2pt">2026年11月15日</div>
+    </div>
+  </div>
+
+  <!-- PB Records -->
+  <div class="pb-card">
+    <div style="font-size:8pt;font-weight:700;color:#5F5E5A;margin-bottom:7pt;text-align:center;letter-spacing:0.05em">自己ベスト記録</div>
+    <div class="pb-section">
+      <div class="pb-cat" style="color:#A32D2D">フルマラソン</div>
+      <div class="pb-row" style="margin-top:4pt">
+        <div><span class="pb-label">日付</span><br>2025/03/23</div>
+        <div><span class="pb-label">大会</span><br>さが桜マラソン2025</div>
+        <div style="text-align:center"><span class="pb-label">グロス</span><br><strong>3:29:25</strong></div>
+        <div style="text-align:center"><span class="pb-label">ネット</span><br><strong>3:27:29</strong></div>
+      </div>
+    </div>
+    <div class="pb-section">
+      <div class="pb-cat" style="color:#3C3489">ハーフマラソン</div>
+      <div class="pb-row" style="margin-top:4pt">
+        <div><span class="pb-label">日付</span><br>2025/02/01</div>
+        <div><span class="pb-label">大会</span><br>第77回香川丸亀国際<br>ハーフマラソン</div>
+        <div style="text-align:center"><span class="pb-label">グロス</span><br><strong>1:28:51</strong></div>
+        <div style="text-align:center"><span class="pb-label">ネット</span><br><strong>1:28:13</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOC -->
+  <div style="max-width:148mm;margin:14pt auto 0">
+    <div style="font-size:8pt;font-weight:700;color:#5F5E5A;letter-spacing:0.05em;margin-bottom:6pt;text-align:center">目　次</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4pt">
+      <div class="toc-item"><span class="toc-num" style="background:#E1F5EE;color:#0F6E56">①</span><span class="toc-label">トレーニング分類（9カテゴリ）</span></div>
+      <div class="toc-item"><span class="toc-num" style="background:#FAECE7;color:#993C1D">②</span><span class="toc-label">週間スケジュール（確定版）</span></div>
+      <div class="toc-item"><span class="toc-num" style="background:#E6F1FB;color:#185FA5">③</span><span class="toc-label">アップ・ダウンルーティン</span></div>
+      <div class="toc-item"><span class="toc-num" style="background:#EEEDFE;color:#3C3489">④</span><span class="toc-label">スタビリティ・コアルーティン</span></div>
+      <div class="toc-item"><span class="toc-num" style="background:#E1F5EE;color:#0F6E56">⑤</span><span class="toc-label">就寝前ストレッチ＋足底ケア</span></div>
+      <div class="toc-item"><span class="toc-num" style="background:#EEEDFE;color:#3C3489">⑥</span><span class="toc-label">レジスタンストレーニングメニュー</span></div>
+      <div class="toc-item"><span class="toc-num" style="background:#EAF3DE;color:#3B6D11">⑦</span><span class="toc-label">栄養・補給プロトコル</span></div>
+      <div class="toc-item"><span class="toc-num" style="background:#FAEEDA;color:#854F0B">⑧</span><span class="toc-label">デロード計画（3:1サイクル）</span></div>
+      <div class="toc-item"><span class="toc-num" style="background:#FCEBEB;color:#A32D2D">⑨</span><span class="toc-label">暑熱順化方法</span></div>
+      <div class="toc-item"><span class="toc-num" style="background:#FAECE7;color:#993C1D">⑩</span><span class="toc-label">年間レース計画（全41週）</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ SECTION 1: トレーニング分類 ══════════ -->
+<div class="sec">
+<h2 class="h2-teal">① トレーニング分類（9カテゴリ）</h2>
+<table>
+<thead>
+<tr><th class="th-teal" style="width:4%">#</th><th class="th-teal" style="width:18%">カテゴリ</th><th class="th-teal" style="width:26%">サブ要素</th><th class="th-teal">目的・効果</th></tr>
+</thead>
+<tbody>
+<tr><td rowspan="4" style="text-align:center;font-weight:700;color:#993C1D;vertical-align:middle">1</td><td rowspan="4" style="font-weight:700;vertical-align:middle">ランニング（主運動）</td><td>低強度持続（LSD）</td><td>毛細血管の発達・脂質代謝の改善・有酸素基盤の構築。長時間活動に耐える持久力の土台を作る。</td></tr>
+<tr><td>中強度持続（ジョグ・ペース走）</td><td>乳酸閾値（LT）の向上。高い有酸素強度を長時間維持する能力の強化。レースの大半を占めるゾーンへの適応。</td></tr>
+<tr><td>高強度断続（インターバル・レピティション）</td><td>最大酸素摂取量（VO₂max）の向上・ランニングエコノミーの改善。心肺機能の上限を引き上げる。</td></tr>
+<tr><td>レース特異的（距離踏み・試走）</td><td>目標レースペースへの神経筋・代謝的な習熟。コース・給水のシミュレーション。心理的準備と自信の構築。</td></tr>
+<tr><td rowspan="3" style="text-align:center;font-weight:700;color:#BA7517;vertical-align:middle">2</td><td rowspan="3" style="font-weight:700;vertical-align:middle">クロストレーニング</td><td>水泳・アクアジョギング</td><td>脚への衝撃ゼロで心肺機能を強化。怪我時や高負荷週の有酸素能力維持に最適。水の抵抗が全身の筋持久力にも寄与。</td></tr>
+<tr><td>バイク・エルゴメーター</td><td>膝・足首への負担なしに有酸素持久力を維持・強化。大腿四頭筋への追加刺激。ランと異なる動作パターンで疲労回復を促しながら心肺負荷をかけられる。</td></tr>
+<tr><td>エリプティカル等</td><td>怪我時の練習継続手段。複数筋群の協調した低衝撃有酸素運動。走動作に近い動作パターンのものもある。</td></tr>
+<tr><td rowspan="4" style="text-align:center;font-weight:700;color:#0F6E56;vertical-align:middle">3</td><td rowspan="4" style="font-weight:700;vertical-align:middle">コンディショニング</td><td>動的ストレッチ（練習前）</td><td>関節可動域の動的な拡大・神経系の活性化・体温上昇。静止した状態ではなく動きの中で筋肉を伸ばすことで練習への準備を整える。</td></tr>
+<tr><td>静的ストレッチ（練習後）</td><td>練習後の筋緊張の緩和・疲労回復の促進。副交感神経を優位にしリカバリーモードへの移行を助ける。</td></tr>
+<tr><td>モビリティトレーニング</td><td>股関節・胸椎など特定関節の能動的可動域の改善。硬直した関節がランニングフォームの制限になることを防ぐ。特に腸腰筋・胸椎はストライドと腕振りに直結。</td></tr>
+<tr><td>筋膜リリース</td><td>フォームローラー等による軟部組織の癒着解消・血流改善。筋肉の張りや疲労感の軽減。マッサージの代替として日常的なセルフケアを可能にする。</td></tr>
+<tr><td rowspan="3" style="text-align:center;font-weight:700;color:#3C3489;vertical-align:middle">4</td><td rowspan="3" style="font-weight:700;vertical-align:middle">ストレングス＆スタビリティ</td><td>レジスタンストレーニング</td><td>最大筋力・筋持久力の向上。特に下肢後面（ハムスト・臀部）と引く系（広背筋）を強化。ランのみでは維持できない筋量を確保し怪我リスクを低減。</td></tr>
+<tr><td>スタビリティトレーニング</td><td>静的姿勢保持能力・関節安定性の向上（プランク等）。体幹を「動かさずに保つ力」を鍛える。骨盤・腰椎の不安定が引き起こすランニング障害の予防。</td></tr>
+<tr><td>コアトレーニング（ダイナミック）</td><td>動きの中での体幹安定。対角動作中の腰椎コントロール。ランニング動作への直接的な転用を目的とした機能的コア強化。</td></tr>
+<tr><td rowspan="3" style="text-align:center;font-weight:700;color:#72243E;vertical-align:middle">5</td><td rowspan="3" style="font-weight:700;vertical-align:middle">パワー＆プライオメトリクス</td><td>プライオメトリクス</td><td>腱の弾性エネルギーの活用効率を高める・接地時間を短縮する。SSC（伸張-短縮サイクル）を鍛えランニングエコノミーを改善（バウンディング・ホッピング等）。</td></tr>
+<tr><td>クイックリフト</td><td>神経筋パワーの最大発揮能力を高める（クリーン・スナッチ等）。高速な力発揮パターンの習得がスプリント・坂道での推進力につながる。</td></tr>
+<tr><td>レジステッド・スプリット（坂道ダッシュ）</td><td>ランニング特異的な筋力強化（接地時の臀部・ハムスト・ふくらはぎへの負荷）＋ 腱の弾性（バネ）強化。プライオメトリクス的側面も持つ。</td></tr>
+<tr><td rowspan="2" style="text-align:center;font-weight:700;color:#185FA5;vertical-align:middle">6</td><td rowspan="2" style="font-weight:700;vertical-align:middle">動作スキル</td><td>ランニングドリル</td><td>腕振り・脚の引き付け・接地位置の修正によるフォーム改善。繰り返しにより神経系にパターンを刻み、無意識に効率的な動作が行われるようにする。</td></tr>
+<tr><td>アジリティ</td><td>着地衝撃を瞬時に推進力へ変換する能力と路面・勾配変化への即時対応能力の向上。神経系の活性化によりランニングエコノミー（省エネ効率）を改善。</td></tr>
+<tr><td rowspan="4" style="text-align:center;font-weight:700;color:#3B6D11;vertical-align:middle">7</td><td rowspan="4" style="font-weight:700;vertical-align:middle">リカバリー＆ケア</td><td>アクティブリカバリー</td><td>非常に軽い運動による血流促進・乳酸除去の加速。完全休養よりも代謝産物のクリアランスが速い。</td></tr>
+<tr><td>睡眠・休養管理</td><td>超回復の最大化・成長ホルモン分泌促進・免疫機能の維持。睡眠の質低下はHRVと翌日のパフォーマンスに直接影響。</td></tr>
+<tr><td>栄養・水分補給</td><td>エネルギー補給・筋タンパク合成促進・グリコーゲン回復。タイミング（練習後30分以内）と組み合わせ（糖質＋タンパク質）が効果を左右する。</td></tr>
+<tr><td>ボディケア（マッサージ等）</td><td>炎症管理・筋組織の回復促進・疲労蓄積の予防。高負荷週や連続レース前後の組織ダメージを早期解消する。</td></tr>
+<tr><td rowspan="3" style="text-align:center;font-weight:700;color:#A32D2D;vertical-align:middle">8</td><td rowspan="3" style="font-weight:700;vertical-align:middle">暑熱・環境適応</td><td>暑熱順化（入浴・サウナ・重ね着）</td><td>体温調節能力の向上・発汗効率の改善・血漿量の増加。4〜14日で有意な適応が得られる。暑熱環境でのパフォーマンス低下と熱中症リスクを低減する。</td></tr>
+<tr><td>水分・電解質戦略</td><td>発汗量に応じた補給計画の策定。脱水によるパフォーマンス低下と低ナトリウム血症を同時に防ぐ。レース別の補給ポイントの事前計画。</td></tr>
+<tr><td>環境別調整（気温・標高・路面）</td><td>レースコース・季節・路面状況への適応。気温によるペース調整基準の把握。標高の影響の理解と対策。</td></tr>
+<tr><td rowspan="4" style="text-align:center;font-weight:700;color:#5F5E5A;vertical-align:middle">9</td><td rowspan="4" style="font-weight:700;vertical-align:middle">マネジメント＆メンタル</td><td>トレーニングモニタリング</td><td>過負荷の早期検知・強度調整・回復状態の客観的把握。ガーミン等のデバイスデータ（RPE・HRV・走行距離）と主観的疲労感を組み合わせて判断精度を高める。</td></tr>
+<tr><td>周期化・計画管理</td><td>マクロ/メゾ/ミクロサイクルの設計による適応刺激と回復の最適化。3:1デロードサイクルを基本として、レース日程に合わせたピーキングを計画的に行う。</td></tr>
+<tr><td>メンタルスキル</td><td>集中・苦痛への対処・自己効力感の構築。レース中の精神的苦境（特に30km以降）への対処スキルを練習から意識的に養う。</td></tr>
+<tr><td>レースマネジメント</td><td>ペーシング戦略・30km以降の壁への対処・気象条件によるプラン変更・給水タイミングの判断など、レース当日の意思決定能力を高める。</td></tr>
+</tbody>
+</table>
+</div>
+
+
+<!-- ══════════ 分類とプランの対応 ══════════ -->
+<div class="sec">
+<h2 class="h2-gray">分類と実際のプランとの対応・位置づけ</h2>
+<p style="font-size:8.5pt;margin-bottom:5pt">トレーニング分類は「何をなぜやるか」を整理するための概念的な地図であり、実際のプランはその地図に基づいた実施計画です。9カテゴリすべてを独立したプログラムとして設計するのではなく、<strong>ランニング（①）を主軸</strong>としながら各カテゴリが有機的に組み合わさる構造になっています。週間スケジュールや各ルーティンがそれぞれどのカテゴリに対応するかを以下に整理します。</p>
+<table>
+<thead>
+<tr>
+  <th class="th-gray" style="width:4%">#</th>
+  <th class="th-gray" style="width:17%">カテゴリ</th>
+  <th class="th-gray" style="width:11%">実装状況</th>
+  <th class="th-gray" style="width:33%">実際の実施場所・手段</th>
+  <th class="th-gray">プランにおける位置づけ・役割</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;font-weight:700;color:#993C1D">①</td>
+<td style="font-weight:700">ランニング</td>
+<td><span style="color:#0F6E56;font-weight:700">完全実装</span></td>
+<td>火（LT走）・木（インターバル）・金（ペース走）・水土（イーペース走）・日（ロング走）</td>
+<td><strong>主軸。</strong>全適応の中心となる最重要カテゴリ。強度・量・種類の管理がパフォーマンスを直接決定する。</td>
+</tr>
+<tr>
+<td style="text-align:center;font-weight:700;color:#BA7517">②</td>
+<td style="font-weight:700">クロストレーニング</td>
+<td><span style="color:#888;font-weight:700">代替手段</span></td>
+<td>通常は使用しない。怪我・体調不良時に①の代替として使用。</td>
+<td><strong>コンティンジェンシープラン。</strong>ランニングができない期間でも有酸素能力を維持するための保険的位置づけ。週間スケジュールには登場しない。</td>
+</tr>
+<tr>
+<td style="text-align:center;font-weight:700;color:#0F6E56">③</td>
+<td style="font-weight:700">コンディショニング</td>
+<td><span style="color:#0F6E56;font-weight:700">実装済み</span></td>
+<td>アップ中の動的ストレッチ（レッグスイング等）／ 就寝前のフォームローラー（FR1〜6）＋静的ストレッチ（11種目）</td>
+<td><strong>支持基盤①。</strong>ランニングの質を損なう「可動域の制限・筋緊張」を除去する。怪我予防とリカバリーの両面に作用する。</td>
+</tr>
+<tr>
+<td style="text-align:center;font-weight:700;color:#3C3489">④</td>
+<td style="font-weight:700">ストレングス＆スタビリティ</td>
+<td><span style="color:#0F6E56;font-weight:700">実装済み</span></td>
+<td>RTメニュー（火曜フル10種目・土曜短縮8種目）／ スタビリティ・コアルーティン（毎日アップ前・6種目）</td>
+<td><strong>支持基盤②。</strong>ランのみでは維持できない筋量・関節安定性・体幹を確保。接地時の力伝達効率とフォーム崩れ防止に直結する。</td>
+</tr>
+<tr>
+<td style="text-align:center;font-weight:700;color:#72243E">⑤</td>
+<td style="font-weight:700">パワー＆プライオメトリクス</td>
+<td><span style="color:#BA7517;font-weight:700">主要項目実装</span></td>
+<td>坂道ダッシュ（火曜・週1回）／ アップ中のバウンディング50m・アンクルホップ ／ ※クイックリフトは除外</td>
+<td><strong>特異的強化①。</strong>腱の弾性と神経筋パワーを高め、同じエネルギーでより速く走れる「バネ」を作る。ランニングエコノミーの改善に直接貢献する。</td>
+</tr>
+<tr>
+<td style="text-align:center;font-weight:700;color:#185FA5">⑥</td>
+<td style="font-weight:700">動作スキル</td>
+<td><span style="color:#0F6E56;font-weight:700">実装済み</span></td>
+<td>アップ中のランニングドリル（Aスキップ・ハイニー・アンクルホップ）</td>
+<td><strong>特異的強化②。</strong>効率的なフォームパターンを神経系に刷り込み、疲労しても崩れにくい走りを作る。⑤のバネと組み合わさって省エネな接地を実現する。</td>
+</tr>
+<tr>
+<td style="text-align:center;font-weight:700;color:#3B6D11">⑦</td>
+<td style="font-weight:700">リカバリー＆ケア</td>
+<td><span style="color:#0F6E56;font-weight:700">実装済み</span></td>
+<td>月曜完全休養 ／ 就寝前ルーティン（フォームローラー＋静的ストレッチ）／ 栄養・補給プロトコル全体</td>
+<td><strong>支持基盤③。</strong>「負荷＋回復＝適応」の後半を担う。質の高い練習を継続するために不可欠。軽視するとすべての練習の効果が半減する。</td>
+</tr>
+<tr>
+<td style="text-align:center;font-weight:700;color:#A32D2D">⑧</td>
+<td style="font-weight:700">暑熱・環境適応</td>
+<td><span style="color:#BA7517;font-weight:700">季節的実装</span></td>
+<td>5〜7月：入浴・サウナ・重ね着プロトコル ／ 通年：補給計画（ポカリスウェット・ヴィターゴ等）</td>
+<td><strong>環境対応。</strong>夏季レースや暑熱環境でのパフォーマンス低下を防ぐ。他カテゴリとは独立してレース条件に応じてON/OFFを切り替える性質を持つ。</td>
+</tr>
+<tr>
+<td style="text-align:center;font-weight:700;color:#5F5E5A">⑨</td>
+<td style="font-weight:700">マネジメント＆メンタル</td>
+<td><span style="color:#0F6E56;font-weight:700">実装済み</span></td>
+<td>ガーミンによるモニタリング ／ 3:1デロードサイクル ／ 年間レース計画（41週）／ 補給計画・プレレースルーティン（個人の蓄積を活用）</td>
+<td><strong>統合管理（メタ）。</strong>他の8カテゴリをいつ・どれだけやるかを決める「司令塔」。計画の精度がすべての効果を左右する。レースマネジメント（補給計画・ルーティン）はすでに個人の経験として蓄積されている。</td>
+</tr>
+</tbody>
+</table>
+<div style="margin-top:6pt;display:grid;grid-template-columns:1fr 1fr 1fr;gap:5pt">
+  <div style="background:#fdf5f3;border-left:2.5pt solid #D85A30;padding:4pt 7pt;font-size:8pt;border-radius:0 2pt 2pt 0">
+    <strong>主軸</strong><br>①ランニングがすべての適応の中心。他のカテゴリは①の質・量・継続性を高めるために存在する。
+  </div>
+  <div style="background:#f2fdf8;border-left:2.5pt solid #1D9E75;padding:4pt 7pt;font-size:8pt;border-radius:0 2pt 2pt 0">
+    <strong>支持基盤</strong><br>③コンディショニング・④ストレングス・⑦リカバリーは練習を支えるインフラ。これらが崩れると①の質が低下する。
+  </div>
+  <div style="background:#f8f8f8;border-left:2.5pt solid #888780;padding:4pt 7pt;font-size:8pt;border-radius:0 2pt 2pt 0">
+    <strong>フェーズ依存</strong><br>⑧暑熱適応は5〜7月のみアクティブ。②クロストレーニングは怪我時のみ起動。状況によって重みが変わる。
+  </div>
+</div>
+</div>
+
+<!-- ══════════ SECTION 2: 週間スケジュール ══════════ -->
+<div class="sec">
+<h2 class="h2-coral">② 週間スケジュール</h2>
+<table>
+<thead><tr><th class="th-coral" style="width:8%">曜日</th><th class="th-coral" style="width:20%">強度</th><th class="th-coral">メニュー</th><th class="th-coral" style="width:22%">備考</th></tr></thead>
+<tbody>
+<tr class="w-rest"><td style="font-weight:700">月</td><td>完全休養</td><td>—</td><td>唯一の完全休養日</td></tr>
+<tr class="w-vhard"><td style="font-weight:700">火</td><td>高強度（複合）</td><td>RT（70分・10種目）→ 休憩 → 坂道ダッシュ 5〜10本</td><td>月曜休養後に神経筋系最優先。RT後に休憩を挟みダッシュへ</td></tr>
+<tr class="w-easy"><td style="font-weight:700">水</td><td>低強度</td><td>イーペース走 60〜90分</td><td>純粋な回復日</td></tr>
+<tr class="w-hard"><td style="font-weight:700">木</td><td>高強度</td><td>インターバル走 60〜100分（アップ・ダウン含む）</td><td>VO₂max向上・エコノミー改善</td></tr>
+<tr class="w-hard"><td style="font-weight:700">金</td><td>中〜高強度</td><td>LT走 / ペース走 60〜100分（アップ・ダウン含む）5〜14km</td><td>乳酸閾値向上</td></tr>
+<tr class="w-vhard"><td style="font-weight:700">土</td><td>中強度（複合）</td><td>RT短縮版（40分・8種目）→ 休憩 → イーペース走 60〜90分</td><td>ロング走前日のため軽量設計</td></tr>
+<tr class="w-long"><td style="font-weight:700">日</td><td>中〜高強度</td><td>ロング走 120〜150分（レース近づくにつれてペース上昇）</td><td>最重要セッション</td></tr>
+</tbody>
+</table>
+<div class="note teal">坂道ダッシュは週1回（火曜）のみ実施。坂道が使えない週は1kmダッシュ1本に代替。</div>
+</div>
+
+<!-- ══════════ SECTION 3: アップ・ダウン ══════════ -->
+<div class="sec">
+<h2 class="h2-blue">③ アップ・ダウンルーティン</h2>
+<div class="two-col">
+<div class="no-break">
+<h3>▌アップ（毎練習前）</h3>
+<table>
+<thead><tr><th class="th-gray">ステップ</th><th class="th-gray">内容</th></tr></thead>
+<tbody>
+<tr><td>1. スタビリティ・コア</td><td>詳細は④参照（12〜15分）</td></tr>
+<tr><td>2. ジョギング</td><td>5〜10分 軽め</td></tr>
+<tr><td>3. 動的ストレッチ</td><td>レッグスイング・アームサークル・ランジツイスト</td></tr>
+<tr><td>4. バウンディング</td><td>50m</td></tr>
+<tr><td>5. ランニングドリル</td><td>アンクルホップ・Aスキップ・ハイニー</td></tr>
+</tbody>
+</table>
+</div>
+<div class="no-break">
+<h3>▌ダウン（毎練習後）</h3>
+<table>
+<thead><tr><th class="th-gray">内容</th></tr></thead>
+<tbody><tr><td>ジョギング（5〜10分）</td></tr></tbody>
+</table>
+<div class="note teal" style="margin-top:5pt">静的ストレッチは就寝前に実施（⑤参照）。練習直後は行わない。</div>
+<h3 style="margin-top:7pt">▌月曜（任意）</h3>
+<table>
+<thead><tr><th class="th-gray">内容</th></tr></thead>
+<tbody><tr><td>スタビリティ・コア①〜④のみ（約5分）</td></tr></tbody>
+</table>
+</div>
+</div>
+</div>
+
+<!-- ══════════ SECTION 4: スタビリティ・コア ══════════ -->
+<div class="sec">
+<h2 class="h2-purple">④ スタビリティ・コアルーティン（毎日・アップ前 約12〜15分）</h2>
+<table>
+<thead><tr><th class="th-purple" style="width:4%">#</th><th class="th-purple" style="width:22%">種目</th><th class="th-purple" style="width:12%">体位</th><th class="th-purple" style="width:20%">ターゲット</th><th class="th-purple" style="width:18%">量</th><th class="th-purple">実施のコツ</th></tr></thead>
+<tbody>
+<tr><td>1</td><td style="font-weight:700">バキューム</td><td>立位 or 仰向け</td><td>腹横筋・横隔膜</td><td>3〜5回 × 10〜20秒</td><td>息を吐き切り、へそを背骨方向へ引き上げる。浅く呼吸しながら保持。</td></tr>
+<tr><td>2</td><td style="font-weight:700">デッドバグ</td><td>仰向け</td><td>腹横筋・多裂筋・腸腰筋</td><td>2セット × 左右各6〜8回</td><td>腰を床に押し付けたまま対角の腕と脚を伸ばす（3〜4秒）。腰が浮いたら可動域を狭める。</td></tr>
+<tr><td>3</td><td style="font-weight:700">片足ヒップリフト</td><td>仰向け→ブリッジ</td><td>大臀筋・ハムスト・体幹側面</td><td>2セット × 左右各8〜10回</td><td>片脚を浮かせ支持脚の踵で押し上げる。頂点で2秒保持。骨盤の高さを揃える。</td></tr>
+<tr><td>4</td><td style="font-weight:700">バードドッグ</td><td>四つん這い</td><td>多裂筋・大臀筋・腹横筋</td><td>2セット × 左右各8〜10回</td><td>対角の腕と脚を水平まで伸ばし2〜3秒保持。骨盤を水平に保つ。</td></tr>
+<tr><td>5</td><td style="font-weight:700">プランク ショルダータップ</td><td>プランク</td><td>腹斜筋・前鋸筋・体幹全体</td><td>2セット × 左右各8〜10回</td><td>ハイプランクで足を肩幅より広め。タッチ中の腰の回旋を最小限に。</td></tr>
+<tr><td>6</td><td style="font-weight:700">ワンレッグデッドリフト（自重）</td><td>立位</td><td>大臀筋・ハムスト・足関節</td><td>2セット × 左右各8〜10回</td><td>支持脚の膝を軽く曲げ股関節から前傾。背中は中立位。踵で押すイメージで戻る。</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ══════════ SECTION 5: 就寝前ストレッチ ══════════ -->
+<div class="sec">
+<h2 class="h2-teal">⑤ 就寝前 筋膜リリース＋静的ストレッチ＋足底ケア（毎日就寝前 約25〜27分）</h2>
+<h3>▌フォームローラー（先に実施・約5分）</h3>
+<p style="font-size:8pt;color:#666;margin-bottom:4pt">静的ストレッチの前に行うことで軟部組織を温め、その後のストレッチ効率を高める。各部位を体重をかけながらゆっくり転がし、張りの強い点で数秒キープする。</p>
+<table>
+<thead><tr><th class="th-teal" style="width:5%">#</th><th class="th-teal" style="width:24%">部位</th><th class="th-teal" style="width:14%">時間</th><th class="th-teal">実施方法</th></tr></thead>
+<tbody>
+<tr><td>FR1</td><td style="font-weight:700">大臀筋・梨状筋</td><td>各30秒</td><td>片側ずつ体重をかけてゆっくり転がす。臀部全体をカバーし、張りの強い点でキープ。</td></tr>
+<tr><td>FR2</td><td style="font-weight:700">腸脛靭帯（ITバンド）</td><td>各30秒</td><td>外腿（大腿骨外側）に体重をかけて転がす。最も張りの強い点でキープ。膝の上下を重点的に。</td></tr>
+<tr><td>FR3</td><td style="font-weight:700">ハムストリング</td><td>各30秒</td><td>太腿後面に沿って膝裏〜坐骨方向へ転がす。足首を交差させると圧力が増す。</td></tr>
+<tr><td>FR4</td><td style="font-weight:700">ふくらはぎ</td><td>各30秒</td><td>ふくらはぎ全体を転がす。足首を回転させながら行うと効果的。アキレス腱付近は丁寧に。</td></tr>
+<tr><td>FR5</td><td style="font-weight:700">大腿四頭筋</td><td>各30秒</td><td>うつぶせで太腿前面を転がす。膝に近い部分（大腿直筋の遠位）を重点的に。</td></tr>
+<tr><td>FR6</td><td style="font-weight:700">胸椎（上背部）</td><td>30秒</td><td>肩甲骨の間に横向きにフォームローラーを置き、両腕を胸の前で交差させて上背部を転がす。</td></tr>
+</tbody>
+</table>
+<h3 style="margin-top:6pt">▌静的ストレッチ＋足底ケア（約20分）</h3>
+<p style="font-size:8pt;color:#666;margin-bottom:4pt">各45〜60秒保持。反動をつけず、息を吐きながらじわじわ伸ばす。「痛み」でなく「引っ張り感」が目安。</p>
+<table>
+<thead><tr><th class="th-teal" style="width:4%">#</th><th class="th-teal" style="width:24%">種目</th><th class="th-teal" style="width:24%">ターゲット</th><th class="th-teal" style="width:16%">時間</th><th class="th-teal">実施方法</th></tr></thead>
+<tbody>
+<tr><td colspan="5" style="background:#E1F5EE;font-weight:700;font-size:8pt;color:#0F6E56;padding:2.5pt 5pt">▌股関節・臀部</td></tr>
+<tr><td>1</td><td style="font-weight:700">仰向けニーハグ</td><td>腰背部・大臀筋（準備）</td><td>30秒 × 1（両足同時）</td><td>両膝を胸に引き寄せて抱える。腰を床に押し付けるイメージ。</td></tr>
+<tr><td>2</td><td style="font-weight:700">フィギュアフォー</td><td>梨状筋・大臀筋・外旋筋</td><td>60秒 × 左右</td><td>仰向けで足首を反対の膝に乗せ、太腿を両手で抱えて引き寄せる。</td></tr>
+<tr><td>3</td><td style="font-weight:700">低ランジ腸腰筋</td><td>腸腰筋・大腿直筋近位部</td><td>60秒 × 左右</td><td>片膝をついたランジ姿勢で骨盤垂直。後ろ足の股関節前面を床方向へ沈める。</td></tr>
+<tr><td colspan="5" style="background:#E1F5EE;font-weight:700;font-size:8pt;color:#0F6E56;padding:2.5pt 5pt">▌ハムストリング</td></tr>
+<tr><td>4</td><td style="font-weight:700">仰向けハムスト</td><td>ハムストリング・坐骨神経</td><td>60秒 × 左右</td><td>タオルを足裏にかけ膝を伸ばしながら天井方向へ。骨盤を床につけたまま。</td></tr>
+<tr><td colspan="5" style="background:#E1F5EE;font-weight:700;font-size:8pt;color:#0F6E56;padding:2.5pt 5pt">▌大腿四頭筋・ITバンド</td></tr>
+<tr><td>5</td><td style="font-weight:700">側臥位クワッド</td><td>大腿四頭筋</td><td>45秒 × 左右</td><td>横向きで同側の足首を持ち踵を臀部へ引き寄せる。</td></tr>
+<tr><td>6</td><td style="font-weight:700">ITバンド / TFL</td><td>腸脛靭帯・大腿筋膜張筋</td><td>45秒 × 左右</td><td>仰向けで片足を反対側へクロスオーバー。腰を起こさず肩を床につけたまま引き伸ばす。</td></tr>
+<tr><td colspan="5" style="background:#E1F5EE;font-weight:700;font-size:8pt;color:#0F6E56;padding:2.5pt 5pt">▌ふくらはぎ・足底</td></tr>
+<tr><td>7</td><td style="font-weight:700">壁押し腓腹筋</td><td>腓腹筋（アキレス腱保護）</td><td>45秒 × 左右</td><td>壁に手をつき後ろ脚の膝を伸ばしたままかかとを床に押し付ける。</td></tr>
+<tr><td>8</td><td style="font-weight:700">ヒラメ筋</td><td>ヒラメ筋（足底筋膜炎予防）</td><td>45秒 × 左右</td><td>7と同姿勢から後ろ脚の膝を軽く曲げてかかとを床に押す。</td></tr>
+<tr><td colspan="5" style="background:#9FE1CB;font-weight:700;font-size:8pt;color:#085041;padding:2.5pt 5pt">▌足底ケア</td></tr>
+<tr><td>9</td><td style="font-weight:700">テニスボール足底マッサージ</td><td>足底筋膜・足底内在筋</td><td>60秒 × 左右</td><td>床のテニスボールを足裏全体で転がす。かかと直前・土踏まず・母趾球の3点を重点的に。</td></tr>
+<tr><td>10</td><td style="font-weight:700">足底筋膜ストレッチ</td><td>足底筋膜（踵付着部〜趾）</td><td>30秒 × 3セット・左右</td><td>座位で片足を反対の膝に乗せ、足趾をすね方向へ反らせて踵〜趾の付け根を伸ばす。</td></tr>
+<tr><td colspan="5" style="background:#E1F5EE;font-weight:700;font-size:8pt;color:#0F6E56;padding:2.5pt 5pt">▌胸椎・上半身</td></tr>
+<tr><td>11</td><td style="font-weight:700">スレッドザニードル</td><td>胸椎回旋・肩甲帯</td><td>45秒 × 左右</td><td>四つん這いで片手を反対の腕の下をくぐらせ床に肩を近づける。腰は動かさない。</td></tr>
+</tbody>
+</table>
+<div class="note teal"><strong>朝の追加（重要）：</strong>起床後・最初の一歩を踏み出す前に⑩足底筋膜ストレッチを30秒×左右行う。</div>
+</div>
+
+<!-- ══════════ SECTION 6: RT ══════════ -->
+<div class="sec">
+<h2 class="h2-purple">⑥ レジスタンストレーニングメニュー</h2>
+<div class="two-col">
+<div class="no-break">
+<h3>▌火曜：フルセッション（70分・10種目）</h3>
+<table>
+<thead><tr><th class="th-purple" style="width:5%">#</th><th class="th-purple">種目</th><th class="th-purple" style="width:38%">主なターゲット</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>ミリタリープレス</td><td>三角筋・上腕三頭筋</td></tr>
+<tr><td>2</td><td>プルアップ</td><td>広背筋・上腕二頭筋</td></tr>
+<tr><td>3</td><td>バックランジ</td><td>大腿四頭筋・大臀筋（片脚）</td></tr>
+<tr><td>4</td><td>サイドランジ</td><td>内転筋・大臀筋</td></tr>
+<tr><td>5</td><td>スクワット</td><td>大腿四頭筋・大臀筋・ハムスト</td></tr>
+<tr><td>6</td><td>カーフレイズ</td><td>腓腹筋・ヒラメ筋</td></tr>
+<tr><td>7</td><td>デッドリフト</td><td>後面連鎖全体</td></tr>
+<tr><td>8</td><td>ベントオーバーロウ</td><td>広背筋・僧帽筋・菱形筋</td></tr>
+<tr><td>9</td><td>ベンチプレス</td><td>大胸筋・三角筋前部</td></tr>
+<tr><td>10</td><td>ハンギングニーレイズ</td><td>腹直筋・腸腰筋</td></tr>
+</tbody>
+</table>
+</div>
+<div class="no-break">
+<h3>▌土曜：短縮版（40分・8種目）</h3>
+<p style="font-size:8pt;color:#666;margin-bottom:3pt">ベンチプレス・ミリタリープレスを除外</p>
+<table>
+<thead><tr><th class="th-purple" style="width:5%">#</th><th class="th-purple">種目</th><th class="th-purple" style="width:38%">主なターゲット</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>プルアップ</td><td>広背筋・上腕二頭筋</td></tr>
+<tr><td>2</td><td>バックランジ</td><td>大腿四頭筋・大臀筋（片脚）</td></tr>
+<tr><td>3</td><td>サイドランジ</td><td>内転筋・大臀筋</td></tr>
+<tr><td>4</td><td>スクワット</td><td>大腿四頭筋・大臀筋・ハムスト</td></tr>
+<tr><td>5</td><td>カーフレイズ</td><td>腓腹筋・ヒラメ筋</td></tr>
+<tr><td>6</td><td>デッドリフト</td><td>後面連鎖全体</td></tr>
+<tr><td>7</td><td>ベントオーバーロウ</td><td>広背筋・僧帽筋</td></tr>
+<tr><td>8</td><td>ハンギングニーレイズ</td><td>腹直筋・腸腰筋</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<!-- ══════════ SECTION 7: 栄養・補給 ══════════ -->
+<div class="sec">
+<h2 class="h2-green">⑦ 栄養・補給プロトコル</h2>
+<table>
+<thead><tr><th class="th-gray" style="width:17%">タイミング</th><th class="th-gray" style="width:45%">内容</th><th class="th-gray">補足・目的</th></tr></thead>
+<tbody>
+<tr><td style="font-weight:700">起床時</td><td>Kentai CFMホエイプロテイン グルタミン＋ 30g（水溶き）</td><td>就寝中の異化を抑制。タンパク質供給開始。</td></tr>
+<tr><td style="font-weight:700">朝食</td><td>サバ缶（半分）／サラダ200g以上（ミニトマト・ブロッコリー・ほうれん草・ミックスベジタブル・キャベツ）／スクランブルエッグ＋キクラゲ／果物のヨーグルト（脂肪0）かけ（ブルーベリー・いちご・デーツ）／納豆ご飯</td><td>推定タンパク質約53g。オメガ3・鉄・ビタミンD（キクラゲ）を朝食で確保。</td></tr>
+<tr><td style="font-weight:700">朝食後</td><td>ディアナチュラ ヘム鉄×葉酸＋B6・B12・C 2粒／エビオス錠 10錠</td><td>持久系アスリートに不足しがちな鉄・葉酸を補給。</td></tr>
+<tr><td style="font-weight:700">間食（17時頃）</td><td>BASE BREAD メープル 1袋／チョコレート効果カカオ86% 3粒</td><td>練習1〜2時間前の適切な補給タイミング。</td></tr>
+<tr><td style="font-weight:700">RT中（水・土）</td><td>ヴィターゴ 15g を薄めて飲みながら</td><td>RT後半の血糖維持・筋力低下抑制・コルチゾール抑制。</td></tr>
+<tr><td style="font-weight:700">練習中（ランのみ）</td><td>水のみ</td><td>—</td></tr>
+<tr><td style="font-weight:700">ロング走中</td><td>ポカリスウェット（道中で購入）</td><td>長時間の電解質補給。</td></tr>
+<tr><td style="font-weight:700">セッション終了後</td><td>ヴィターゴ 30g ＋ EAA 15g ＋ 天然塩 1g ＋ にがり少々を水に溶解</td><td>グリコーゲン回復・筋タンパク合成促進・電解質補充。</td></tr>
+<tr><td style="font-weight:700">夕食前</td><td>SPOVITA C 3g（VC 1,300mg等）＋ ポッカレモン100 15ml ＋ 生姜 ＋ オリゴ糖を水300mlで溶解／アカディ 200ml／青汁 200ml</td><td>ビタミンC（抗酸化・免疫）・プロバイオティクス。</td></tr>
+<tr><td style="font-weight:700">夕食後</td><td>ディアナチュラ Ca・Mg・Zn・VD 6粒／エビオス錠 10錠／ネイチャーメイド スーパービタミンD 1粒（25μg）</td><td>骨・筋機能・免疫（VD合計約41〜45μg/日）。脂溶性VDは食事直後に。</td></tr>
+</tbody>
+</table>
+<div class="note teal">推定タンパク質総摂取量：約157〜162g/日（約2.6g/kg・体重60kgの場合）。追加不要。</div>
+</div>
+
+<!-- ══════════ SECTION 8: デロード ══════════ -->
+<div class="sec">
+<h2 class="h2-amber">⑧ デロード計画（3:1サイクル）</h2>
+<div class="two-col">
+<div class="no-break">
+<h3>▌基本ルール</h3>
+<table>
+<thead><tr><th class="th-amber">項目</th><th class="th-amber">内容</th></tr></thead>
+<tbody>
+<tr><td style="font-weight:700">サイクル</td><td>3週間ビルド → 1週間デロード（3:1）</td></tr>
+<tr><td style="font-weight:700">起点</td><td>ロング走が完全に戻った週（W1 = 2026年5月4日週）</td></tr>
+<tr><td style="font-weight:700">原則</td><td>量（時間・距離・セット数）を約50%削減。ペース・強度は必ず維持。</td></tr>
+<tr><td style="font-weight:700">前倒し条件</td><td>オーバーリーチング3日以上 / HRV「低い/アンバランス」数日継続 / 安静時心拍＋5bpm以上が3朝連続 / ボディバッテリーが回復しきらない日が続く</td></tr>
+<tr><td style="font-weight:700">延長条件</td><td>ステータス「生産的/ピーキング」・HRV「バランス」・主観的疲労が通常通り</td></tr>
+</tbody>
+</table>
+</div>
+<div class="no-break">
+<h3>▌デロード週メニュー</h3>
+<table>
+<thead><tr><th class="th-amber" style="width:10%">曜日</th><th class="th-amber">内容</th></tr></thead>
+<tbody>
+<tr><td>月</td><td>完全休養（変更なし）</td></tr>
+<tr><td>火</td><td>RT 40分（セット数半減）＋ 坂道ダッシュ 3本のみ</td></tr>
+<tr><td>水</td><td>イーペース走 30〜40分</td></tr>
+<tr><td>木</td><td>インターバル走（本数を半分・ペース維持）</td></tr>
+<tr><td>金</td><td>短縮LT走 30〜40分（ペース維持）</td></tr>
+<tr><td>土</td><td>RT 20〜25分（主要4種目）＋ イーペース走 30〜40分</td></tr>
+<tr><td>日</td><td>ロング走 70〜80分（完全イーペース）</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<!-- ══════════ SECTION 9: 暑熱順化 ══════════ -->
+<div class="sec">
+<h2 class="h2-red">⑨ 暑熱順化方法</h2>
+<div class="three-col">
+<div class="no-break">
+<h3>▌① 入浴（主要手段）</h3>
+<table>
+<thead><tr><th class="th-coral">項目</th><th class="th-coral">内容</th></tr></thead>
+<tbody>
+<tr><td style="font-weight:700">湯温</td><td>40〜42℃</td></tr>
+<tr><td style="font-weight:700">時間</td><td>30〜40分</td></tr>
+<tr><td style="font-weight:700">頻度</td><td>毎日（練習後）</td></tr>
+<tr><td style="font-weight:700">目安</td><td>じんわり汗・少し不快感あり</td></tr>
+<tr><td style="font-weight:700">注意</td><td>終了後すぐ水分補給</td></tr>
+<tr><td style="font-weight:700">継続</td><td>今週から7月5日まで</td></tr>
+</tbody>
+</table>
+<div class="note" style="margin-top:4pt;font-size:8pt">研究でサウナと同等の効果が確認されている（Zurawlew ら 2016）。練習後の体温が高い状態で入ると効率が上がる。</div>
+</div>
+<div class="no-break">
+<h3>▌② サウナ（ジム利用時）</h3>
+<table>
+<thead><tr><th class="th-coral">項目</th><th class="th-coral">内容</th></tr></thead>
+<tbody>
+<tr><td style="font-weight:700">温度</td><td>80〜90℃</td></tr>
+<tr><td style="font-weight:700">時間</td><td>15〜20分</td></tr>
+<tr><td style="font-weight:700">頻度</td><td>週2〜3回（練習後）</td></tr>
+<tr><td style="font-weight:700">目安</td><td>強い発汗・心拍上昇を感じる程度</td></tr>
+<tr><td style="font-weight:700">注意</td><td>退出後すぐ水分・電解質補給。めまい感があれば直ちに退出。</td></tr>
+<tr><td style="font-weight:700">効果</td><td>4〜14日で有意な適応（血漿量増加・発汗効率向上）</td></tr>
+</tbody>
+</table>
+<div class="note" style="margin-top:4pt;font-size:8pt">入浴と生理的効果は同等。ジムのサウナが利用できる日は入浴の代替として使用可。</div>
+</div>
+<div class="no-break">
+<h3>▌③ 重ね着走法（補助）</h3>
+<table>
+<thead><tr><th class="th-coral">項目</th><th class="th-coral">内容</th></tr></thead>
+<tbody>
+<tr><td style="font-weight:700">方法</td><td>長袖シャツを1枚余分に着て走る</td></tr>
+<tr><td style="font-weight:700">対象</td><td>イーペース走・アップのみ</td></tr>
+<tr><td style="font-weight:700">頻度</td><td>週3〜4回（易日のみ）</td></tr>
+<tr><td style="font-weight:700">注意</td><td>RPEが上がりすぎる場合は1枚に戻す。インターバル・LT走には使わない。</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<!-- ══════════ SECTION 10: 年間レース計画 ══════════ -->
+<div class="sec sec-newpage">
+<h2 class="h2-coral">⑩ 年間レース計画（2026年5月〜2027年3月）</h2>
+<h3 style="margin-bottom:4pt">▌レース一覧</h3>
+<table>
+<thead><tr><th class="th-coral" style="width:14%">日程</th><th class="th-coral" style="width:24%">大会名</th><th class="th-coral" style="width:9%">種別</th><th class="th-coral" style="width:8%">位置付け</th><th class="th-coral">戦略・備考</th></tr></thead>
+<tbody>
+<tr><td>2026/5/24</td><td>麒麟獅子マラソン</td><td>10km</td><td><span class="tag tag-c">C</span></td><td>路面温度約30℃ → 暑熱順化の状態確認。デロードW3末尾に位置するため自然な疲労抜きと重なる。</td></tr>
+<tr><td>2026/7/5</td><td>姫ボタル瀞川平トレイルラン</td><td>32km</td><td><span class="tag tag-c">C</span></td><td>スタート6時32℃の極暑。登降坂対応必要。レース後2週間は完全回復優先。</td></tr>
+<tr><td>2026/10/12</td><td>舞鶴赤れんがハーフマラソン</td><td>HM</td><td><span class="tag tag-b">B</span></td><td>秋冬ビルドアップの状態確認レース。チューンアップとして活用。</td></tr>
+<tr><td>2026/11/15</td><td>神戸マラソン</td><td>FM</td><td><span class="tag tag-b">B</span></td><td>Bレース・全力回避推奨。LTペース±程度で走り回復3〜4週を確保。ピーク構築への影響を最小化する。</td></tr>
+<tr><td>2027/2/7</td><td>香川丸亀国際ハーフマラソン</td><td>HM</td><td><span class="tag tag-a">A</span></td><td>PB目標（現在1:28:51→目標1:25〜1:27）。フラットコースで好条件。さが桜への最終フィットネス確認も兼ねる。</td></tr>
+<tr><td>2027/3/21</td><td>さが桜マラソン</td><td>FM</td><td><span class="tag tag-m">本命</span></td><td>年間最重要レース。目標 sub-3:20（現在3:29:25）。丸亀HMから42日後。</td></tr>
+</tbody>
+</table>
+
+<h3 style="margin-top:7pt;margin-bottom:4pt">▌週次トレーニング計画（全41週）</h3>
+<table>
+<thead><tr><th class="th-gray" style="width:7%">週</th><th class="th-gray" style="width:16%">期間</th><th class="th-gray" style="width:11%">目標距離</th><th class="th-gray" style="width:12%">種別</th><th class="th-gray">フォーカス / 特記事項</th></tr></thead>
+<tbody>
+<tr><td colspan="5" style="background:#E1F5EE;font-weight:700;font-size:8pt;color:#0F6E56;padding:2.5pt 5pt">① 回復・ベース（5月〜6月）</td></tr>
+<tr class="ap-build"><td>W1</td><td>5/4–10</td><td>80 km</td><td>ビルド</td><td>3:1サイクル開始・ロング走完全復帰</td></tr>
+<tr class="ap-build"><td>W2</td><td>5/11–17</td><td>85 km</td><td>ビルド</td><td>ビルド</td></tr>
+<tr class="ap-race"><td>W3</td><td>5/18–24</td><td>80 km</td><td>レース週</td><td>麒麟獅子10km（5/24）→ レース週。木曜インターバル短縮、土曜完全休養。</td></tr>
+<tr class="ap-deload"><td>W4</td><td>5/25–31</td><td>45 km</td><td>デロード</td><td>デロード ＋ 麒麟獅子後回復兼用</td></tr>
+<tr class="ap-build"><td>W5</td><td>6/1–7</td><td>80 km</td><td>ビルド</td><td>ビルド再開・トレイル要素追加（アップダウン意識）</td></tr>
+<tr class="ap-build"><td>W6</td><td>6/8–14</td><td>85 km</td><td>ビルド</td><td>ビルド</td></tr>
+<tr class="ap-taper"><td>W7</td><td>6/15–21</td><td>65 km</td><td>テーパー</td><td>テーパー開始（姫ボタル向け）</td></tr>
+<tr class="ap-taper"><td>W8</td><td>6/22–28</td><td>45 km</td><td>テーパー</td><td>直前テーパー</td></tr>
+<tr class="ap-race"><td>★</td><td>6/29–7/5</td><td>55 km</td><td>レース</td><td>姫ボタル瀞川平トレイルラン 32km（7/5）</td></tr>
+<tr><td colspan="5" style="background:#F1EFE8;font-weight:700;font-size:8pt;color:#5F5E5A;padding:2.5pt 5pt">姫ボタル後の回復（7月上旬〜中旬）</td></tr>
+<tr class="ap-recovery"><td>R1</td><td>7/6–12</td><td>35 km</td><td>回復</td><td>完全回復</td></tr>
+<tr class="ap-recovery"><td>R2</td><td>7/13–19</td><td>50 km</td><td>回復</td><td>軽ビルド開始</td></tr>
+<tr><td colspan="5" style="background:#FAEEDA;font-weight:700;font-size:8pt;color:#854F0B;padding:2.5pt 5pt">② 夏期ベース（7月下旬〜8月）</td></tr>
+<tr class="ap-build"><td>W9</td><td>7/20–26</td><td>65 km</td><td>ビルド</td><td>夏期ビルド（暑熱管理）</td></tr>
+<tr class="ap-build"><td>W10</td><td>7/27–8/2</td><td>70 km</td><td>ビルド</td><td>ビルド</td></tr>
+<tr class="ap-build"><td>W11</td><td>8/3–9</td><td>75 km</td><td>ビルド</td><td>ビルド</td></tr>
+<tr class="ap-deload"><td>W12</td><td>8/10–16</td><td>40 km</td><td>デロード</td><td>デロード</td></tr>
+<tr class="ap-build"><td>W13</td><td>8/17–23</td><td>75 km</td><td>ビルド</td><td>ビルド再開</td></tr>
+<tr class="ap-build"><td>W14</td><td>8/24–30</td><td>80 km</td><td>ビルド</td><td>秋冬へ加速</td></tr>
+<tr><td colspan="5" style="background:#FAECE7;font-weight:700;font-size:8pt;color:#993C1D;padding:2.5pt 5pt">③ 秋冬ビルドアップ（9月〜11月）</td></tr>
+<tr class="ap-build"><td>W15</td><td>8/31–9/6</td><td>85 km</td><td>ビルド</td><td>ビルド</td></tr>
+<tr class="ap-deload"><td>W16</td><td>9/7–13</td><td>45 km</td><td>デロード</td><td>デロード</td></tr>
+<tr class="ap-build"><td>W17</td><td>9/14–20</td><td>85 km</td><td>ビルド</td><td>ビルド</td></tr>
+<tr class="ap-build"><td>W18</td><td>9/21–27</td><td>90 km</td><td>ビルド</td><td>ビルド</td></tr>
+<tr class="ap-build"><td>W19</td><td>9/28–10/4</td><td>90 km</td><td>ビルド</td><td>ビルド・LT走の質向上</td></tr>
+<tr class="ap-taper"><td>W20</td><td>10/5–11</td><td>50 km</td><td>テーパー</td><td>テーパー（舞鶴HM向け）</td></tr>
+<tr class="ap-race"><td>★</td><td>10/12–18</td><td>50 km</td><td>Bレース</td><td>舞鶴赤れんがHM（10/12）＋ 回復</td></tr>
+<tr class="ap-build"><td>W21</td><td>10/19–25</td><td>75 km</td><td>ビルド</td><td>再ビルド</td></tr>
+<tr class="ap-build"><td>W22</td><td>10/26–11/1</td><td>85 km</td><td>ビルド</td><td>神戸前ビルド</td></tr>
+<tr class="ap-taper"><td>W23</td><td>11/2–8</td><td>55 km</td><td>テーパー</td><td>テーパー（神戸向け）</td></tr>
+<tr class="ap-taper"><td>W24</td><td>11/9–14</td><td>35 km</td><td>テーパー</td><td>神戸直前テーパー</td></tr>
+<tr class="ap-race"><td>★</td><td>11/15–21</td><td>55 km</td><td>Bレース</td><td>神戸マラソン（11/15 Bレース・全力回避推奨）＋ 初回復</td></tr>
+<tr><td colspan="5" style="background:#F1EFE8;font-weight:700;font-size:8pt;color:#5F5E5A;padding:2.5pt 5pt">神戸後の回復（11月中旬〜12月初旬）</td></tr>
+<tr class="ap-recovery"><td>R3</td><td>11/22–28</td><td>35 km</td><td>回復</td><td>完全回復（フル後）</td></tr>
+<tr class="ap-recovery"><td>R4</td><td>11/29–12/5</td><td>55 km</td><td>回復</td><td>軽ビルド</td></tr>
+<tr class="ap-build"><td>R5</td><td>12/6–12</td><td>75 km</td><td>移行</td><td>回復完了・ピーク期へ移行</td></tr>
+<tr><td colspan="5" style="background:#EEEDFE;font-weight:700;font-size:8pt;color:#3C3489;padding:2.5pt 5pt">④ ピーク構築（12月〜1月）</td></tr>
+<tr class="ap-build"><td>W25</td><td>12/13–19</td><td>90 km</td><td>ビルド</td><td>ビルド</td></tr>
+<tr class="ap-build"><td>W26</td><td>12/20–26</td><td>100 km</td><td>ビルド</td><td>ビルド</td></tr>
+<tr class="ap-deload"><td>W27</td><td>12/27–1/2</td><td>55 km</td><td>デロード</td><td>デロード（年末年始）</td></tr>
+<tr class="ap-build"><td>W28</td><td>1/3–9</td><td>100 km</td><td>ビルド</td><td>ビルド再開（年始）</td></tr>
+<tr class="ap-peak"><td>W29</td><td>1/10–16</td><td>110 km</td><td>ピーク</td><td>年間最高負荷週（前年12月実績相当）</td></tr>
+<tr class="ap-taper"><td>W30</td><td>1/17–23</td><td>70 km</td><td>テーパー</td><td>丸亀HMテーパー1</td></tr>
+<tr class="ap-taper"><td>W31</td><td>1/24–30</td><td>50 km</td><td>テーパー</td><td>丸亀直前テーパー</td></tr>
+<tr><td colspan="5" style="background:#FBEAF0;font-weight:700;font-size:8pt;color:#72243E;padding:2.5pt 5pt">⑤ レースシーズン（2月〜3月）</td></tr>
+<tr class="ap-race"><td>★★</td><td>1/31–2/7</td><td>45 km</td><td>Aレース</td><td>香川丸亀国際HM（2/7 PB目標）</td></tr>
+<tr class="ap-recovery"><td>R6</td><td>2/8–14</td><td>40 km</td><td>回復</td><td>回復週</td></tr>
+<tr class="ap-build"><td>W32</td><td>2/15–21</td><td>80 km</td><td>ビルド</td><td>最終ビルド1</td></tr>
+<tr class="ap-build"><td>W33</td><td>2/22–28</td><td>85 km</td><td>ビルド</td><td>最終ビルド2</td></tr>
+<tr class="ap-build"><td>W34</td><td>3/1–7</td><td>85 km</td><td>ビルド</td><td>最終ビルド3（質重視）</td></tr>
+<tr class="ap-taper"><td>W35</td><td>3/8–14</td><td>60 km</td><td>テーパー</td><td>テーパー1</td></tr>
+<tr class="ap-main"><td>★★★</td><td>3/15–21</td><td>35 km</td><td>本命</td><td>さが桜マラソン（3/21）← 本命</td></tr>
+</tbody>
+</table>
+<div class="note amber">神戸マラソン落選時：W21〜W24の神戸準備ブロックを継続ビルドアップに転換。落選確定後に計画を組み替える。</div>
+<div class="footer">マラソントレーニング計画書 2026–2027 ／ 作成：2026年4月27日 ／ ガーミン等のデータを参照しながら実際の状態に合わせて柔軟に調整してください。</div>
+</div>
+
+</body>
+</html>
