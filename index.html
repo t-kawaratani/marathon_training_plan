@@ -149,6 +149,7 @@ tr:nth-child(even) td{background:#fafafa}
 <a class="toc-item" href="#sec0"><span class="toc-num" style="background:#F1EFE8;color:#5F5E5A">0</span><span class="toc-label">トレーニング履歴・目標設定の根拠</span></a>
 <a class="toc-item" href="#sec02"><span class="toc-num" style="background:#FBEAF0;color:#72243E">0-2</span><span class="toc-label">レース分析・プレレースルーティン（丸亀HM・さが桜FM）</span></a>
 <a class="toc-item" href="#sec03"><span class="toc-num" style="background:#FAEEDA;color:#854F0B">0-3</span><span class="toc-label">レース分析（麒麟獅子・舞鶴・姫ボタル）</span></a>
+<a class="toc-item" href="#sec04"><span class="toc-num" style="background:#F1EFE8;color:#5F5E5A">0-4</span><span class="toc-label">進捗管理システム・記録テンプレート</span></a>
 <a class="toc-item" href="#sec1"><span class="toc-num" style="background:#E1F5EE;color:#0F6E56">①</span><span class="toc-label">トレーニング分類（9カテゴリ）</span></a>
 <a class="toc-item" href="#sec2"><span class="toc-num" style="background:#FAECE7;color:#993C1D">②</span><span class="toc-label">週間スケジュール＋補足（練習環境・雨天対応）</span></a>
 <a class="toc-item" href="#sec3"><span class="toc-num" style="background:#E6F1FB;color:#185FA5">③</span><span class="toc-label">アップ・ダウンルーティン</span></a>
@@ -323,6 +324,103 @@ tr:nth-child(even) td{background:#fafafa}
 
 <div style="margin-top:8px;padding:7px 11px;border-radius:5pt;background:#FAEEDA;border-left:2.5pt solid #BA7517;font-size:11px;color:#854F0B;line-height:1.6">
 <strong>3レース共通の知見：</strong>①平均心拍155bpmがHMの強度基準として確立。②前半のオーバーペースが後半失速の主因（麒麟獅子・舞鶴ともに共通）→ 前半抑制の徹底。③ロング走の蓄積がトレイル・長距離での粘り強さに直結。
+</div>
+</div>
+
+<!-- ══════════ 進捗管理 ══════════ -->
+<div class="sec">
+<h2 class="h2-gray">0-4. 進捗管理システム</h2>
+
+<h3>▌記録の種類と取得方法</h3>
+<div class="tbl"><table style="margin-bottom:8px">
+<thead><tr>
+  <th class="th-gray" style="width:17%">カテゴリ</th>
+  <th class="th-gray" style="width:13%">取得方法</th>
+  <th class="th-gray" style="width:25%">記録手段</th>
+  <th class="th-gray" style="width:10%">頻度</th>
+  <th class="th-gray">記録する主な項目</th>
+</tr></thead>
+<tbody>
+<tr><td style="font-weight:700">ランニング全般</td><td>自動</td><td>ガーミン自動記録</td><td>毎回</td><td>距離・タイム・ペース・心拍・HRV・ボディバッテリー・トレーニングステータス</td></tr>
+<tr><td style="font-weight:700">LT走・ペース走・坂道ダッシュ・インターバル</td><td>自動＋補助</td><td>ガーミンのワークアウト機能で実施・GPXファイルをエクスポート</td><td>毎回</td><td>GPXで各セット・本数・ペース・心拍を分析。坂道ダッシュは屋外のためGPX共有。</td></tr>
+<tr><td style="font-weight:700">12kmペース走（指標）</td><td>自動</td><td>ガーミン自動記録（条件固定：ジョグシューズ・ウッドチップ・ロングスパッツ）</td><td>月1〜2回</td><td>平均ペース・平均心拍。HMペース設定のインジケーター。条件の固定が必須。</td></tr>
+<tr><td style="font-weight:700">ガーミンLT計測</td><td>自動</td><td>ガーミン自動</td><td>月1回</td><td>LTペース（/km）・LT心拍（bpm）。12kmペース走と2指標で交差確認。</td></tr>
+<tr><td style="font-weight:700">レジスタンストレーニング</td><td>自動＋補助</td><td>①FITファイルをエクスポート（重量・rep・セット時間）②ガーミンコネクトのセット一覧スクリーンショット（種目名を確認）③統計画面スクリーンショット（総ボリューム・平均心拍）。トレーニング時に種目名を入力できれば②は不要になる可能性あり。</td><td>毎回</td><td>種目・重量・rep数・総ボリューム（kg）・平均心拍</td></tr>
+<tr><td style="font-weight:700">自走式トレッドミル（スプリント代替）</td><td>自動＋手動</td><td>TCXファイルをエクスポート＋本数・Resistance設定をメモ</td><td>実施毎</td><td>本数・最大心拍・Resistance設定・主観的強度</td></tr>
+<tr><td style="font-weight:700">週次所感</td><td>手動</td><td>下記テンプレートに記録（日曜のロング走後・約5分）</td><td>週1回</td><td>主観的疲労感・睡眠・特記事項・来週の方針</td></tr>
+<tr><td style="font-weight:700">レース</td><td>自動＋手動</td><td>GPXファイル＋備忘録メモ</td><td>レース毎</td><td>GPX・補給記録・前後日の食事・体調・コース・気象・所感</td></tr>
+</tbody>
+</table></div>
+
+<h3>▌Claudeへの定期共有フロー</h3>
+<div class="tbl"><table style="margin-bottom:8px">
+<thead><tr><th class="th-gray" style="width:20%">タイミング</th><th class="th-gray" style="width:30%">共有するもの</th><th class="th-gray">Claudeが行うこと</th></tr></thead>
+<tbody>
+<tr><td style="font-weight:700">RT進捗確認（月1〜2回）</td><td>FITファイル＋スクリーンショット2枚</td><td>重量・rep推移の比較・次回の目標重量の提案・RIRの評価</td></tr>
+<tr><td style="font-weight:700">レース後</td><td>GPXファイル＋備忘録メモ</td><td>ラップ・心拍分析・前回比較・次回レースへの示唆</td></tr>
+<tr><td style="font-weight:700">ランニング質的分析（随時）</td><td>GPXファイル（ワークアウト）</td><td>インターバル・LT走の各セット分析・ペース安定性の評価</td></tr>
+<tr><td style="font-weight:700">デロード判断（必要時）</td><td>ガーミンのトレーニングステータス・HRV状況をメモ</td><td>デロード前倒しの判断支援・次週の負荷調整の提案</td></tr>
+</tbody>
+</table></div>
+
+<h3>▌週次レビュー テンプレート（日曜のロング走後・約5分）</h3>
+<div style="background:#f8f8f8;border-radius:5pt;padding:7px 11px;font-size:11px;line-height:2.0;margin-bottom:8px">
+<strong>【週次レビュー】W__（__月__日〜__月__日）</strong><br>
+─── 走行データ（ガーミン自動）───<br>
+週間走行距離：____ km　（目標：____ km）<br>
+デロードサイクル：Wk __/4（ビルド／デロード／レース週）<br>
+<br>
+─── 主観的コンディション ───<br>
+疲労感（1〜5）：__　　睡眠の質（1〜5）：__<br>
+ガーミン　トレーニングステータス：________________<br>
+ガーミン　HRV / ボディバッテリー：____ / ____<br>
+<br>
+─── RTメモ ───<br>
+今週のバーベルボリューム：____ kg（前回比 ±____）<br>
+スクワット：____ kg × ____ rep　デッドリフト：____ kg × ____ rep<br>
+プルアップ：____ rep × 3セット<br>
+<br>
+─── スプリント ───<br>
+坂道 / トレッドミル：____ 本（Resistance：____）　最大心拍：____ bpm<br>
+<br>
+─── 特記事項・来週の方針 ───<br>
+身体の変化・怪我の予兆：<br>
+練習の質の感触：<br>
+来週で変えること：
+</div>
+
+<h3>▌月次インジケーター記録（月末）</h3>
+<div style="background:#EAF3DE;border-radius:5pt;padding:7px 11px;font-size:11px;line-height:2.0;margin-bottom:8px">
+<strong>【月次インジケーター】____ 年 ____ 月</strong><br>
+─── ペース指標 ───<br>
+12kmペース走　実施日：____　平均ペース：____/km　平均心拍：____ bpm<br>
+ガーミンLT計測　実施日：____　LTペース：____/km　LT心拍：____ bpm<br>
+<br>
+─── 月間サマリー ───<br>
+月間走行距離：____ km　目標比：±____ km<br>
+怪我・体調不良：<br>
+来月の重点課題：
+</div>
+
+<h3>▌RT重量進捗ログ（主要3種目＋ボリューム）</h3>
+<div class="tbl"><table>
+<thead><tr>
+  <th class="th-gray" style="width:10%">日付</th>
+  <th class="th-gray" style="width:18%">スクワット（kg×rep）</th>
+  <th class="th-gray" style="width:18%">デッドリフト（kg×rep）</th>
+  <th class="th-gray" style="width:14%">プルアップ（rep合計）</th>
+  <th class="th-gray" style="width:14%">総ボリューム（kg）</th>
+  <th class="th-gray">メモ</th>
+</tr></thead>
+<tbody>
+<tr><td>4/25</td><td>60×10×3</td><td>60×5〜8×2</td><td>10（5+3+2）</td><td>—</td><td>再開後の基準値</td></tr>
+<tr><td>4/30</td><td>60×10〜12×4</td><td>60×7×2</td><td>11（4+4+3）</td><td>9,520kg</td><td>スクワット12rep達成・ベントオーバーロウ30kgに増量</td></tr>
+<tr style="color:var(--color-text-tertiary);font-size:11px"><td>次回目標</td><td>65kg検討</td><td>60×8目標</td><td>5×3目標</td><td>—</td><td></td></tr>
+</tbody>
+</table></div>
+
+<div style="margin-top:8px;padding:7px 11px;border-radius:5pt;background:#E1F5EE;border-left:2.5pt solid #1D9E75;font-size:11px;color:#0F6E56;line-height:1.6">
+<strong>継続のポイント：</strong>ガーミンが自動で取るデータは手で再入力しない。週次テンプレートには「ガーミンで取れないもの」だけを記録する。Claudeへの共有は月1〜2回・レース後・気になる時に随時行う。このチャットに計画書・レース分析・RTデータがすべて蓄積されているため、次回共有時も継続した文脈で分析できる。
 </div>
 </div>
 
